@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Tabs Example</title>
+    <style>
+        .card-img-top {
+            object-fit: cover;
+            height: 300px;
+        }
+
+        img {
+            object-fit: cover;
+
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/210c774be2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+
+            <div class="d-flex">
+                <div class="mx-3">
+                    <button class="btn btn-success" type="submit">Create a new post</button>
+                </div>
+
+                <ul class="list-unstyled d-flex m-0">
+                    <li class="nav-item dropdown p-2">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex justify-content-center mt-4 mb-3">
+        <ul class="nav nav-tabs justify-content-center   col-4 col-md-2" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">
+                    <img width="30px" src="./pixels.png" alt="">
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">
+                    <img width="30px" src="./rounded-black-square-shape.png" alt="">
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-fluid border border-top-0 ">
+        <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active container-fluid" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row justify-content-center gap-1  ">
+                    <div class="col-12 col-md-3 border border-dark d-flex justify-content-center ">
+                        <img width="350px"
+                            src="https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/45ed8ecf-0bb2-4e34-8fcf-624db47c43c8/Golden+Retrievers+dans+pet+care.jpeg"
+                            alt="">
+                    </div>
+                    <div class="col-12 col-md-3 border border-dark d-flex justify-content-center ">
+                        <img width="350px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRojs4kIXm-2nFLnbmYY2bpeUsbMSOhnxhaVg&s"
+                            alt="">
+                    </div>
+                    <div class="col-12 col-md-3 border border-dark d-flex justify-content-center ">
+                        <img width="350px"
+                            src="https://www.purina.es/sites/default/files/styles/ttt_image_510/public/2021-01/Miniature%20Pinscher2.jpg?itok=gAQwB-Bj"
+                            alt="">
+                    </div>
+                    <div class="col-12 col-md-3 border border-dark d-flex justify-content-center ">
+                        <img width="350px" src="https://miau.bg/files/1200x800/dobermani.webp" alt="">
+                    </div>
+                    <div class="col-12 col-md-3 border border-dark d-flex justify-content-center ">
+                        <img width="350px"
+                            src="https://cdn.mos.cms.futurecdn.net/v2/t:0,l:240,cw:1440,ch:1080,q:80,w:1440/ASHH5bDmsp6wnK6mEfZdcU.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="col-12 col-md-3  border border-dark d-flex justify-content-center ">
+                        <img width="350px"
+                            src="https://aarp.widen.net/content/kf2ybo5tdm/jpeg/1140-three-puppies.jpg?crop=true&anchor=0,0&q=80&color=ffffffff&u=ovnylx&w=1140&h=655"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="d-flex flex-column align-items-center">
+
+
+
+                    <div class="col-12 col-md-3 d-flex justify-content-center mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="d-flex align-items-center justify-content-between p-2">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://cdn2.iconfinder.com/data/icons/rounded-labels/154/round-label-sticker-copyright-author-512.png"
+                                        alt="logo" width="30" class="rounded-circle me-2">
+                                    <strong>Mini Pincher</strong>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-vertical" style="cursor:pointer;"></i>
+                            </div>
+
+                            <img width="800px"
+                                src="https://www.purina.es/sites/default/files/styles/ttt_image_510/public/2021-01/Miniature%20Pinscher2.jpg?itok=gAQwB-Bj"
+                                class="card-img-top" alt="Post image">
+
+                            <div class="d-flex justify-content-between align-items-center p-2">
+                                <div>
+                                    <i class="fa-regular fa-heart me-3" style="cursor:pointer;"></i>
+                                    <i class="fa-regular fa-comment me-3" style="cursor:pointer;"></i>
+                                    <i class="fa-regular fa-paper-plane" style="cursor:pointer;"></i>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-bookmark" style="cursor:pointer;"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-body py-2">
+                                <h6 class="card-title mb-1">120 likes</h6>
+                                <p class="card-text mb-2" style="font-size: 0.9rem;">
+                                    <b>Mini Pincher</b>: Believe it! I’ll become Hokage one day! 🍥
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-12 col-md-3 d-flex justify-content-center mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="d-flex align-items-center justify-content-between p-2">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://cdn2.iconfinder.com/data/icons/rounded-labels/154/round-label-sticker-copyright-author-512.png"
+                                        alt="logo" width="30" class="rounded-circle me-2">
+                                    <strong>Doberman</strong>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-vertical" style="cursor:pointer;"></i>
+                            </div>
+
+                            <img src="https://miau.bg/files/1200x800/dobermani.webp" class="card-img-top"
+                                alt="Post image">
+
+                            <div class="d-flex justify-content-between align-items-center p-2">
+                                <div>
+                                    <i class="fa-regular fa-heart me-3" style="cursor:pointer;"></i>
+                                    <i class="fa-regular fa-comment me-3" style="cursor:pointer;"></i>
+                                    <i class="fa-regular fa-paper-plane" style="cursor:pointer;"></i>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-bookmark" style="cursor:pointer;"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-body py-2">
+                                <h6 class="card-title mb-1">95 likes</h6>
+                                <p class="card-text mb-2" style="font-size: 0.9rem;">
+                                    <b>Doberman</b>: Training hard every day! 💪
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-md-3 d-flex justify-content-center mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="d-flex align-items-center justify-content-between p-2">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://cdn2.iconfinder.com/data/icons/rounded-labels/154/round-label-sticker-copyright-author-512.png"
+                                        alt="logo" width="30" class="rounded-circle me-2">
+                                    <strong>Gunter</strong>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-vertical" style="cursor:pointer;"></i>
+                            </div>
+
+                            <img src="https://s.yimg.com/ny/api/res/1.2/A_nnJksXDsF_eCQHDumX4Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM2MA--/https://s.yimg.com/os/creatr-uploaded-images/2023-02/8368b960-b3e3-11ed-befd-cbd25727eabe"
+                                class="card-img-top" alt="Post image">
+
+                            <div class="d-flex justify-content-between align-items-center p-2">
+                                <div>
+                                    <i class="fa-regular fa-heart me-3" style="cursor:pointer;"></i>
+                                    <i class="fa-regular fa-comment me-3" style="cursor:pointer;"></i>
+                                    <i class="fa-regular fa-paper-plane" style="cursor:pointer;"></i>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-bookmark" style="cursor:pointer;"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-body py-2">
+                                <h6 class="card-title mb-1">300 likes</h6>
+                                <p class="card-text mb-2" style="font-size: 0.9rem;">
+                                    <b>Gunter</b>: Going Super Saiyan today! 🔥
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
